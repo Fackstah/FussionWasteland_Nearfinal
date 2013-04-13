@@ -1,7 +1,7 @@
 Custom Wasteland mission with territory capture and Added AI bases and 2 treasure hunts
 This was based off GOT's version of wasteland which used 404's mission as a base
 
-FOR A FULL FAW VISIT:  http://www.fussion-networks.com/desolate/wasteland_faq.html
+FOR A FULL FAQ VISIT:  http://www.fussion-networks.com/desolate/wasteland_faq.html
 
 all credits go to their respective creators
 ========================================================================
