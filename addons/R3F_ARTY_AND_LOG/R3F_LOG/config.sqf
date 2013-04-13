@@ -26,7 +26,11 @@ R3F_LOG_CFG_objets_remorquables = [
 	"B_Hunter_HMG_F",
 	"O_Ifrit_F",
 	"O_Ifrit_GMG_F",
-	"Land_Cargo20_Military_F"
+	"Land_Cargo20_Military_F",
+	"O_Ka60_Unarmed_F",
+	"B_MH9_F",
+	"O_Ka60_F",
+	"B_AH9_F"
 ];
 
 /****** LIFT WITH VEHICLE / HELIPORTER AVEC VEHICULE ******/
@@ -96,7 +100,6 @@ R3F_LOG_CFG_objets_transportables =  [
     	["Land_HBarrier_1_F", 1],
     	["O_Quadbike_F", 10],
     	["B_Quadbike_F", 10],
-	["Land_LampDecor_F", 5],
 	["Land_ToiletBox_F", 5]
 ];
 
@@ -120,6 +123,5 @@ R3F_LOG_CFG_objets_deplacables = [
 	"Land_Mil_WallBig_4m_F",
     	"O_Quadbike_F",
     	"B_Quadbike_F",
-	"Land_LampDecor_F",
 	"Land_ToiletBox_F"
 ];

@@ -1,5 +1,5 @@
 author = 404Games/GOT -Edits By Fackstah;
-onLoadName = Fussion Wasteland v8.2;
+onLoadName = Fussion Wasteland v8.3;
 onLoadMission = Capture the yellow territorys by staying in them for 5 minutes , fuel trucks are hunters with custom forest camo ,Press M for more info;
 respawn="BASE";
 respawnDelay=15;

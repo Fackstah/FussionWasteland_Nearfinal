@@ -5,6 +5,20 @@ FOR A FULL FAQ VISIT:  http://www.fussion-networks.com/desolate/wasteland_faq.ht
 
 all credits go to their respective creators
 ========================================================================
+UPDATE8.2 - 8.3
+========================================================================
+-More optimization to help stabalize the server
+-new capture points added
+-new medical supply building added down south
+- Gun Runner added down south
+-Refuel Helicopters Added they have a 50% chance of spawning each mission start for a dynamic feel
+-AF now capturable 2 part North and South both are worth twice as much as normal areas
+-Civilian Garage added to gas station Vehicles without mounted weapons can access this 
+-Garages in Civilian Cities will repair refuel now (enter garage with vehicle to trigger)
+-removed needless walls and Lamp posts from r3f
+-Towable helicopters (not sure how this will work)
+-removal of starting backpacks get them in the shop (this helps reduce server load)
+========================================================================
 UPDATE8.1
 ========================================================================
 
