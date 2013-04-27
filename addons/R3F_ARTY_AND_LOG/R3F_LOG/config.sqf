@@ -1,4 +1,4 @@
-/****** TOW WITH VEHICLE / REMORQUER AVEC VEHICULE ******/
+﻿/****** TOW WITH VEHICLE / REMORQUER AVEC VEHICULE ******/
 
 /**
  * List of class names of (ground or air) vehicles which can tow towables objects.
@@ -30,6 +30,8 @@ R3F_LOG_CFG_objets_remorquables = [
 	"O_Ka60_Unarmed_F",
 	"B_MH9_F",
 	"O_Ka60_F",
+	"Land_Cargo20_military_F",
+	"Land_cargo_addon02_v2_F",
 	"B_AH9_F"
 ];
 
@@ -58,7 +60,13 @@ R3F_LOG_CFG_objets_heliportables = [
     	"B_Hunter_HMG_F",
     	"O_Ifrit_F",
     	"O_Ifrit_GMG_F",
-    	"Land_Cargo20_Military_F"
+    	"Land_Cargo20_Military_F",
+		"B_SpeedBoat",
+		"B_Lifeboat",
+		"B_Assaultboat",
+		"O_Lifeboat",
+		"O_SpeedBoat",
+		"O_Assaultboat"
 ];
 
 
@@ -73,12 +81,14 @@ R3F_LOG_CFG_transporteurs = [
 	["B_Hunter_HMG_F", 20],
 	["O_Ifrit_F", 20],
 	["O_Ifrit_GMG_F", 20],
-	["O_Ka60_Unarmed_F", 10],
+	["O_Ka60_Unarmed_F", 45],
 	["B_MH9_F", 10],
-	["O_Ka60_F", 10],
+	["O_Ka60_F", 20],
     	["O_Quadbike_F", 5],
     	["B_Quadbike_F", 5],
 	["Land_Cargo20_military_F", 30],
+		["B_Assaultboat", 10],
+			["O_Assaultboat", 10],
 	["B_AH9_F", 10]
 ];
 
@@ -96,11 +106,16 @@ R3F_LOG_CFG_objets_transportables =  [
 	["Land_HBarrierBig_F", 5],
 	["Land_Mil_WallBig_4m_F",5],
 	["Land_HBarrier_3_F", 3],
-    	["Land_HBarrier_5_F", 5],
-    	["Land_HBarrier_1_F", 1],
-    	["O_Quadbike_F", 10],
-    	["B_Quadbike_F", 10],
-	["Land_ToiletBox_F", 5]
+    ["Land_HBarrier_5_F", 5],
+    ["Land_HBarrier_1_F", 1],
+    ["O_Quadbike_F", 10],
+    ["B_Quadbike_F", 10],
+	["Land_ToiletBox_F", 5],
+	["O_Lifeboat", 5],
+	["B_Lifeboat", 5],
+	["O_Mk6", 10],
+	["B_Mk6", 10],
+	["Land_Sack_F", 1]
 ];
 
 /****** MOVABLE-BY-PLAYER OBJECTS / OBJETS DEPLACABLES PAR LE JOUEUR ******/
@@ -123,5 +138,9 @@ R3F_LOG_CFG_objets_deplacables = [
 	"Land_Mil_WallBig_4m_F",
     	"O_Quadbike_F",
     	"B_Quadbike_F",
-	"Land_ToiletBox_F"
+	"Land_ToiletBox_F",
+		"O_Lifeboat",
+			"B_Lifeboat",
+			"Land_Sack_F"
+	
 ];

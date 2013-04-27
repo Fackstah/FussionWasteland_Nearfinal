@@ -74,5 +74,5 @@ if((_player getVariable "cmoney") > 0) then {
 
 true spawn {
 	waitUntil {playerRespawnTime < 2};
-	titleText ["", "BLACK OUT", 1];
+//	titleText ["", "BLACK OUT", 1];
 };

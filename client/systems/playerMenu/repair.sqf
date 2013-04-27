@@ -22,7 +22,7 @@ if(vehicle player != player) exitWith { player globalChat localize "STR_WL_Error
 // PRECONDITION: Check for vehicle near-by, if exists then select closest.
 if(isNil{_currVehicle}) exitWith { hint "No vehicle within range"; };
 
-if(((damage _currVehicle) > 0.05) OR !(canMove _currVehicle) OR (_currVehicle isKindOf "Air") OR ((count crew _currVehicle > 0) AND (count(configFile >> "CfgVehicles" >> (_currVehicleType) >> "Turrets") > 0) AND !(canFire _currVehicle))) then {
+if(((damage _currVehicle) > 0.001) OR !(canMove _currVehicle) OR (_currVehicle isKindOf "Air") OR ((count crew _currVehicle > 0) AND (count(configFile >> "CfgVehicles" >> (_currVehicleType) >> "Turrets") > 0) AND !(canFire _currVehicle))) then {
 	
     mutexScriptInProgress = true;  
     _currPlayerState = animationState player;

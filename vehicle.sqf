@@ -111,7 +111,7 @@ while {_run} do
 		_unit = _type createVehicle _position;
 		_unit setPosASL _position;
 		_unit setDir _dir;
-
+        [_unit] call randomWeapons;
 		if (_haveinit) then 
 					{_unit setVehicleInit format ["%1;", _unitinit];
 					processInitCommands;};

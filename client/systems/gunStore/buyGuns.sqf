@@ -250,6 +250,20 @@ switch(_switch) do
 								hint format["You already have a vest please drop it before buying a new one"]; 
                             };
                         };
+						case "backpack":
+{
+ _backpackName = backpack player;
+ if(_backpackName == "") then
+ {
+     player addBackpack _class;
+ }
+ else
+ {
+    {if(_x select 1 == _class) then{_price = _x select 2; _name = _x select 0;};}forEach accessoriesArray;
+     gunstoreCart = gunStoreCart - _price;
+     hint format["You already have a backpack please drop it before buying a new one"]; 
+ };
+};
                         case "uni":
                         {
                             _vestName = uniform player;

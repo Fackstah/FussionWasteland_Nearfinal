@@ -26,11 +26,13 @@ switch(_selectedBox) do {
 		_currBox addWeaponCargoGlobal ["M16A4_GL",2];
 		_currBox addWeaponCargoGlobal ["M16A2",4];
 		_currBox addWeaponCargoGlobal ["M9",8];	
+		
         
         // Add ammunition
         _currBox addMagazineCargoGlobal ["15Rnd_9x19_M9",24];
         _currBox addMagazineCargoGlobal ["30Rnd_556x45_Stanag",50];
         _currBox addMagazineCargoGlobal ["HandGrenade",10];
+		_currbox addMagazineCargoGlobal ["SmokeShell", 3];
         _currBox addMagazineCargoGlobal ["1Rnd_HE_M203",15];
         _currBox addMagazineCargoGlobal ["1Rnd_Smoke_M203",15];  
     };
@@ -55,6 +57,7 @@ switch(_selectedBox) do {
         _currBox addMagazineCargoGlobal ["1Rnd_Smoke_M203",10];
         _currBox addMagazineCargoGlobal ["8Rnd_B_Beneli_74Slug",25];
         _currBox addMagazineCargoGlobal ["8Rnd_B_Beneli_Pellets",25];
+		_currbox addMagazineCargoGlobal ["SmokeShell", 3];
     };
     case "basicRU": { // Basic RU 1 is mainly AK's and better pistols, footsoldier weapons.
     	_currBox = createVehicle ["RUBasicWeaponsBox", _selectedBoxPos,[], 30, "NONE"];
@@ -75,6 +78,7 @@ switch(_selectedBox) do {
         _currBox addMagazineCargoGlobal ["HandGrenade",10];
         _currBox addMagazineCargoGlobal ["1Rnd_HE_GP25",15];
         _currBox addMagazineCargoGlobal ["1Rnd_SMOKE_GP25",15];
+		_currbox addMagazineCargoGlobal ["SmokeShell", 3];
     };
     case "basicRU2": { // More Ak's and some shotguns and other crap
     	_currBox = createVehicle ["RUBasicWeaponsBox", _selectedBoxPos,[], 30, "NONE"];
@@ -96,6 +100,7 @@ switch(_selectedBox) do {
         _currBox addMagazineCargoGlobal ["HandGrenade",5];
         _currBox addMagazineCargoGlobal ["8Rnd_B_Saiga12_74Slug",25];
         _currBox addMagazineCargoGlobal ["8Rnd_B_Saiga12_Pellets",25];
+		_currbox addmagazineCargoGlobal ["SmokeShell", 3];
     };
     case "basicGER": { // G36's everywhere...
     	_currBox = createVehicle ["GERBasicWeapons_EP1", _selectedBoxPos,[], 30, "NONE"];
@@ -115,6 +120,7 @@ switch(_selectedBox) do {
         _currBox addMagazineCargoGlobal ["30Rnd_556x45_G36SD",30];
         _currBox addMagazineCargoGlobal ["15Rnd_9x19_M9",24];
         _currBox addMagazineCargoGlobal ["HandGrenade",10];
+		_currbox addmagazineCargoGlobal ["SmokeShell", 3];
     };
     case "basicPMC": { // Most OP weapons in the game, this will be a saught after crate.
     	_currBox = createVehicle ["Ammobox_PMC", _selectedBoxPos,[], 30, "NONE"];
@@ -138,6 +144,7 @@ switch(_selectedBox) do {
         _currBox addMagazineCargoGlobal ["HandGrenade",10];
         _currBox addMagazineCargoGlobal ["1Rnd_HE_M203",10];
         _currBox addMagazineCargoGlobal ["1Rnd_Smoke_M203",10];
+		_currbox addmagazineCargoGlobal ["SmokeShell", 3];
     };
     case "basicSpecial": { // Silent weapons
     	_currBox = createVehicle ["SpecialWeaponsBox", _selectedBoxPos,[], 30, "NONE"];
@@ -150,12 +157,13 @@ switch(_selectedBox) do {
         _currBox addWeaponCargoGlobal ["m8_compact_pmc",2];
 		_currBox addWeaponCargoGlobal ["M4A1_AIM_SD_camo",2];
         _currBox addWeaponCargoGlobal ["m8_sharpshooter",4];
-		_currBox addWeaponCargoGlobal ["M9SD",4];	
+		_currBox addWeaponCargoGlobal ["M9SD",4];
         
         // Add ammunition
         _currBox addMagazineCargoGlobal ["30Rnd_556x45_Stanag",25];
         _currBox addMagazineCargoGlobal ["30Rnd_556x45_StanagSD",25];
         _currBox addMagazineCargoGlobal ["15Rnd_9x19_M9SD",20];
+		_currbox addmagazineCargoGlobal ["SmokeShell", 3];
     };
     case "basicSpecial2": { // BAF weapons
     	_currBox = createVehicle ["SpecialWeaponsBox", _selectedBoxPos,[], 30, "NONE"];
@@ -178,6 +186,7 @@ switch(_selectedBox) do {
         _currBox addMagazineCargoGlobal ["BAF_L109A1_HE",10];
         _currBox addMagazineCargoGlobal ["1Rnd_HE_M203",10];
         _currBox addMagazineCargoGlobal ["1Rnd_Smoke_M203",10];
+		_currbox addmagazineCargoGlobal ["SmokeShell", 3];
     };
     case "basicSpecial3": { // Misc weapons, mostly shit
     	_currBox = createVehicle ["TKBasicWeapons_EP1", _selectedBoxPos,[], 30, "NONE"];
@@ -201,6 +210,7 @@ switch(_selectedBox) do {
         _currBox addMagazineCargoGlobal ["20Rnd_762x51_FNFAL",35];
         _currBox addMagazineCargoGlobal ["10x_303",50];
         _currBox addMagazineCargoGlobal ["10Rnd_9x39_SP5_VSS",10];
+		_currbox addmagazineCargoGlobal ["SmokeShell", 3];
     };
     case "mission_Mid_BAF": { // Broad selection mid-high tier weapons 
     	_currBox = createVehicle ["BAF_BasicWeapons", _selectedBoxPos,[], 30, "NONE"];
@@ -236,6 +246,7 @@ switch(_selectedBox) do {
         _currBox addMagazineCargoGlobal ["5Rnd_86x70_L115A1",5];
         _currBox addMagazineCargoGlobal ["20Rnd_762x51_DMR",10];
         _currBox addMagazineCargoGlobal ["20Rnd_762x51_FNFAL",15];
-		_currBox addMagazineCargoGlobal ["10Rnd_762x54_SVD",8]; 		
+		_currBox addMagazineCargoGlobal ["10Rnd_762x54_SVD",8]; 
+		_currbox addmagazineCargoGlobal ["SmokeShell", 3];		
     };
 };

@@ -123,6 +123,9 @@ waitUntil
 if(_failed) then
 {
     // Mission failed
+    deleteVehicle _vehicle;
+	{deleteVehicle _x;}forEach units _group; 
+	deleteGroup _group; 
     _hint = parseText format ["<t align='center' color='%4' shadow='2' size='1.75'>Objective Failed</t><br/><t align='center' color='%4'>------------------------------</t><br/><t align='center' color='%5' size='1.25'>%1</t><br/><t align='center'><img size='5' image='%2'/></t><br/><t align='center' color='%5'>Objective failed, better luck next time</t>", _missionType, _picture, _vehicleName, failMissionColor, subTextColor];
     messageSystem = _hint;
     if (!isDedicated) then { call serverMessage };
@@ -130,13 +133,14 @@ if(_failed) then
     diag_log format["WASTELAND SERVER - Main Mission Failed: %1",_missionType];
 } else {
     // Mission complete
-
     _ammobox = "Box_NATO_Wps_F" createVehicle getMarkerPos _marker;
     clearMagazineCargoGlobal _ammobox;
     clearWeaponCargoGlobal _ammobox; 
-    [_ammobox,"mission_Side_USSpecial"] call fn_refillbox;
-    _ammobox addMagazine ["HandGrenade", 5];
-    
+    [_ammobox,"mission_USSpecial2"] call fn_refillbox;
+    _ammobox2 = "Box_NATO_Wps_F" createVehicle getMarkerPos _marker;
+    clearMagazineCargoGlobal _ammobox2;
+    clearWeaponCargoGlobal _ammobox2; 
+    [_ammobox2,"mission_USLaunchers2"] call fn_refillbox;
     _hint = parseText format ["<t align='center' color='%4' shadow='2' size='1.75'>Objective Complete</t><br/><t align='center' color='%4'>------------------------------</t><br/><t align='center' color='%5' size='1.25'>%1</t><br/><t align='center'><img size='5' image='%2'/></t><br/><t align='center' color='%5'>The convoy has been sucessfully stopped. Now the weapons and cars are yours.</t>", _missionType, _picture, _vehicleName, successMissionColor, subTextColor];
     messageSystem = _hint;
     if (!isDedicated) then { call serverMessage };

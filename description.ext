@@ -1,6 +1,6 @@
-author = 404Games/GOT -Edits By Fackstah;
-onLoadName = Fussion Wasteland v8.3;
-onLoadMission = Capture the yellow territorys by staying in them for 5 minutes , fuel trucks are hunters with custom forest camo ,Press M for more info;
+author = By Fackstah;
+onLoadName = Fussion Wasteland v9.5;
+onLoadMission = Bags have been added to the gun store under equipment!,Capture the yellow territorys by staying in them for 5 minutes,Press M for more info;
 respawn="BASE";
 respawnDelay=15;
 disabledAI=1;
@@ -28,10 +28,11 @@ class Header
 #include "client\systems\playerMenu\dialog\respawn_dialog.hpp"
 #include "client\systems\playerMenu\dialog\teamkill_dialog.hpp"
 #include "addons\proving_ground\PG_config.hpp"
-
 class RscTitles {
 	#include "addons\proving_ground\PG_rsctitles.hpp"
     #include "client\systems\hud\dialog\hud.hpp"
 	#include "client\systems\playerMenu\dialog\welcome.hpp"
 	#include "client\systems\newicons.hpp"
+
+
 };

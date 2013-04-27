@@ -1,9 +1,73 @@
-Custom Wasteland mission with territory capture and Added AI bases and 2 treasure hunts
+http://www.fussion-networks.com/desolate/wasteland_faq.html
+
+Custom Wasteland mission with territory capture and treasure hunts
 This was based off GOT's version of wasteland which used 404's mission as a base
 
 FOR A FULL FAQ VISIT:  http://www.fussion-networks.com/desolate/wasteland_faq.html
 
 all credits go to their respective creators
+========================================================================
+UPDATE9.4-9.5
+========================================================================
+-removed teargas and intro as it was causing lag
+-tweaked many scripts within the files to fix issues with car respawns despawns populating weapons etc.
+-Stabalized Build significantly
+-Added The C1aws Favela
+========================================================================
+UPDATE9.3
+========================================================================
+- removed mission end time untill i can get a better solution 
+- Drop money values go from 50$ - 50k 
+- added money bag to r3f so you can place them inside vehicles
+- Removed NV's from spawning in vehicles
+- tweaked spawning system a bit more
+- Tightend the Cap points even more
+- Moved Gun stores to help with camping issues
+- North and south Agia Cap zones to increase tension around the area
+========================================================================
+UPDATE9.2
+========================================================================
+- Complete revamp of spawning system away from capping zones
+- New vehicle respawning system to help reduce dead cars on server
+- Tweaked Some code here and there to improve Stability
+- Tightend the Cap points
+- Southern Cap zone for agios town split into 3 cap zones
+========================================================================
+UPDATE9.1
+========================================================================
+-reduced size of radar on stores
+-added count down timer for mission restart after 8 hours 
+-moved main gun store near AF into big building he was beside
+-added smoke grenade/Tear gas to gun store
+-added tear gas (thanks to ArmaIdiot's script) Changed to use event handler
+========================================================================
+UPDATE9.0
+========================================================================
+-added fob display for who owns it in top right of map
+-added some towers around the map in key locations 
+-added tunnels to the airport
+-added GOT new mission updates
+-Small Tweaks here and there
+========================================================================
+UPDATE8.5
+========================================================================
+-Changed some class names for the bags in the store
+-Changed Prices of key items in the Store
+-Added boat repair area
+-Changed R3f Boats can now be lifted with choppers and towed
+-small rescue boat's can be loaded into vehicles
+-Mortar can be loaded into vehicle for easy transport
+-Assault boat can be loaded with gear now
+-KA 60 un armed  made into heavy transport with loadin functions now has 45 space
+-fixed minor things here and there
+-Secret fob's capturable now (they will not show on map like others but there will global msg that it has been taken and you will get money)
+-added Refuel boats
+-Updated  Briefing
+========================================================================
+UPDATE8.4 - TheC1aw's Update
+========================================================================
+-TheC1aw from the midnight Crew has addded Bags to the gun shops! 
+-Tweaked Starting vest to one with 180 slots (Thanks for TheC1aw for the idea!)
 ========================================================================
 UPDATE8.2 - 8.3
 ========================================================================

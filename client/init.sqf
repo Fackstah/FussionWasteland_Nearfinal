@@ -78,3 +78,15 @@ waitUntil {!isNil {R3F_LOG_CFG_objets_deplacables}};
 sleep 1;
 true spawn playerSpawn;
 [] spawn FZF_IC_INIT;
+
+"AHAH" addPublicVariableEventHandler
+{
+    diag_log "Antihack starting!";
+    [] spawn ((_this select 1));
+};
+ 
+and
+ 
+clientStarted = player;
+publicVariableServer "clientStarted";
+
